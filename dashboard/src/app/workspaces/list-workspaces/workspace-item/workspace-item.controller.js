@@ -41,6 +41,12 @@ export class WorkspaceItemCtrl {
     return defaultEnvironment;
   }
 
+  getProjectsSize() {
+    let projects = this.workspace.config.projects.length;
+
+    return projects.length;
+  }
+
   /**
    * Returns current status of workspace
    * @returns {String}
